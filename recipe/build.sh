@@ -33,7 +33,9 @@ cmake -G "${CMAKE_GENERATOR}" \
 make
 
 # Test
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR:-}" != "" ]]; then
 ctest -VV --output-on-failure -j"${CPU_COUNT}"
+fi
 
 # Install
 make install
