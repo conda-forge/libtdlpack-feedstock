@@ -26,13 +26,11 @@ requirements:
     - cmake
     - pkg-config >=0.21
   host:
-    - libgomp        # [linux]
-    - llvm-openmp    # [osx]
-    - openmp ==5.0.0   # [win]
+    - libgcc        # [linux]
+    - libgcc        # [osx]
   run:
-    - libgomp        # [linux]
-    - llvm-openmp    # [osx]
-    - openmp ==5.0.0   # [win]
+    - libgcc        # [linux]
+    - libgcc        # [osx]
 
 test:
   commands:
