@@ -1,5 +1,5 @@
 {% set name = "libtdlpack" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/NOAA-MDL/libtdlpack/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: c434c7f2cc5641a4924f323e0dd1f38b7120995922c3b43e75e5f414e891e326
+  sha256: dc71552bc9be1e975f9f5f41143fe3104ead37ba7317e2bc77bd6faccb32713c
 
 build:
   number: 0
